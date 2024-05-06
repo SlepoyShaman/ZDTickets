@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function RegistrationForm({ setUser }) {
+function RegistrationForm({ setUser, setExistingAccount }) {
   const [error, setError] = useState("");
   const [formData, setFormData] = useState({
     login: '',
@@ -80,8 +80,9 @@ function RegistrationForm({ setUser }) {
         />
         {formErrors.confirmPassword && <span className="error-message">{formErrors.confirmPassword}</span>}
 
-        <button type="submit" >Зарегистрироваться </button>
         {error && <span className="error">{error}</span>}
+        <button type="submit" >Зарегистрироваться </button>
+        <button onClick={setExistingAccount}>У меня есть аккаунт</button>
       </form>
     </>
   );

@@ -6,8 +6,12 @@ function AuthForm({ setUser }) {
   const [hasAccount, setHasAccount] = useState(false);
   return (
     <>
-      {hasAccount ? <LoginForm setUser={setUser} /> : <RegistrationForm setUser={setUser} />}
-      <button onClick={() => setHasAccount(!hasAccount)}>{hasAccount ? 'У меня нет аккаунта' : 'У меня есть аккаунт'}</button>
+      {
+        hasAccount ? 
+        <LoginForm setUser={setUser} setMissingAccount={()=>setHasAccount(false)}/> 
+        : 
+        <RegistrationForm setUser={setUser} setExistingAccount={()=>setHasAccount(true)}/>
+       }
     </>
   )
 }

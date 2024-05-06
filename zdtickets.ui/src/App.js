@@ -3,12 +3,12 @@ import AuthForm from "./components/AuthForm/AuthForm";
 import MainPage from "./components/Main/MainPage";
 
 function App() {
-  const [user, setUser] = useState({ login: '' })
-  return (
-    <div className="container">
-      {user.login === "" ? < AuthForm setUser={setUser} /> : <MainPage userName={user.login} />}
-    </div>
-  );
+    const [user, setUser] = useState({ login: "" })
+    return (
+        <>
+            {user.login === "" ? < AuthForm setUser={setUser} /> : <MainPage userName={user.login} />}
+        </>
+    );
 }
 
 export default App;
