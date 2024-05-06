@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ZDTickets.Storage.Commands.BaseCommand" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\BaseCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Commands.BookTrainTicketsAsync" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\BookTrainTicketsAsync.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Commands.CancelBookAsync" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CancelBookAsync.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Commands.RemoveOldTrainsAsync" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\RemoveOldTrainsAsync.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Entities.TicketEntity">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAAAAAQAAAAAAAAAAAAgAAAIAABACAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TicketEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Entities.TrainEntity">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAAAAAIAAAAAEAAAAAAIAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrainEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Entities.User">
+    <Position X="14.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Identity.UserStorage" BaseTypeListCollapsed="true">
+    <Position X="18" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAABAAAAAAAABAAAIAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Identity\UserStorage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.175" />
+  </Class>
+  <Class Name="ZDTickets.Storage.Migrations.Init">
+    <Position X="14.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20240317220132_Init.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Migrations.AppDbContextModelSnapshot">
+    <Position X="16" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Migrations\AppDbContextModelSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Requests.BaseRequest&lt;T&gt;" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\BaseRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Requests.GetBookedTicketsAsync" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\GetBookedTicketsAsync.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Requests.GetTicketsFromTrainAsync" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\GetTicketsFromTrainAsync.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.Requests.GetTrainsAsync" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\GetTrainsAsync.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.AppDbContext">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.AppStorage" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAAAAAAAAAQAAAAAAAAABAAgAQAAAAACAQAAAAA=</HashCode>
+      <FileName>AppStorage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="ZDTickets.Storage.DbContextDesign" BaseTypeListCollapsed="true">
+    <Position X="20" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbContextDesign.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="ZDTickets.Storage.DbContextMigration">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbContextMigration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Storage.ServiceProvider">
+    <Position X="10.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.IdentityUser" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.EntityFrameworkCore.Migrations.Migration" Collapsed="true">
+    <Position X="14.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="ZDTickets.Logic.Abstractions.IStorage" Collapsed="true">
+    <Position X="16.25" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="ZDTickets.Logic.Abstractions.IUserStorage" Collapsed="true">
+    <Position X="18" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Microsoft.EntityFrameworkCore.Design.IDesignTimeDbContextFactory&lt;TContext&gt;" Collapsed="true">
+    <Position X="20" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

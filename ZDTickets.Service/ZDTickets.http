@@ -1,0 +1,6 @@
+@ZDTickets_HostAddress = http://localhost:5188
+
+GET {{ZDTickets_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

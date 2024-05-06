@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ZDTickets.Logic.Identity.UserService" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAgAAAAAAAAABAAAAAAIAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Identity\UserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ZDTickets.Logic.Tickets.TicketService" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAAAAAAAAAAAAAAAAAAABAAgAQQAAAAAAAAAgAA=</HashCode>
+      <FileName>Tickets\TicketService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ZDTickets.Logic.Models.BaseTicket">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAIAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Logic.Models.Ticket">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Logic.Models.BookedTicket">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAIAAAAAEAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Logic.Models.TrainSummary">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACAAAAAAAAAAIAAAAAEAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Train.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Logic.ViewModels.TrainsFilter">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAEEAAAAAA=</HashCode>
+      <FileName>ViewModels\TrainsFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZDTickets.Logic.ServiceProvider">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ZDTickets.Logic.Identity.IUserService" Collapsed="true">
+    <Position X="13.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Identity\IUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ZDTickets.Logic.Tickets.ITicketService" Collapsed="true">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAABAAgAQQAAAAAAAAAAAA=</HashCode>
+      <FileName>Tickets\ITicketService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
