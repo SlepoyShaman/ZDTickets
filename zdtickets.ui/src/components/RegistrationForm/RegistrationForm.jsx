@@ -25,6 +25,7 @@ function RegistrationForm({ setUser, setExistingAccount }) {
     try {
       const response = await fetch('http://localhost:8080/api/Users/register', {
         method: 'POST',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
         },

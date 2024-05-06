@@ -3,8 +3,8 @@ import TrainsFilter from "./TrainsFilter";
 import TicketsList from "./TicketsList";
 
 function Trains() {
-  const [, setTicket] = useState(0)
   const [trains, setTrains] = useState([]);
+  console.log(trains)
   const [filter, setFilter] = useState(
     {
       cityFrom: '',
@@ -17,7 +17,7 @@ function Trains() {
   const fetchTrains = async () => {
     const url = `http://localhost:8080/api/Tickets/trains?page=${filter.page}&size=${filter.size}&from=${filter.cityFrom}&to=${filter.cityTo}&date=${filter.departudeDate}`;
     try {
-      const response = await fetch(url);
+      const response = await fetch(url, { credentials: 'include' });
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -28,26 +28,22 @@ function Trains() {
     }
   }
 
-  const updateComponent = () => {
-    setTicket(ticket => ticket + 1)
-  }
-
   return (
-    <>
+    <div className="container">
+      <h2>Список поездов</h2>
       <TrainsFilter trainsFilter={filter} setFilter={setFilter} onSubmit={fetchTrains} />
-      <h2>Train List</h2>
-      <ul>
+      <ul className="trains">
         {trains.map(train => (
-          <li key={train.id}>
+          <li className="trains_info" key={train.id}>
             <div>Departure Time: {train.departureTime}</div>
             <div>Arrival Time: {train.arrivalTime}</div>
             <div>From: {train.from}</div>
             <div>To: {train.to}</div>
-            <TicketsList trainId={train.id} trigger={updateComponent} />
+            <TicketsList trainId={train.id} />
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

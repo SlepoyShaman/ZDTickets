@@ -1,0 +1,1 @@
+export const AuthCookie = '.AspNetCore.Identity.Application';
