@@ -15,12 +15,26 @@ namespace ZDTickets.Service.Controllers
         }
 
         [HttpPost("register")]
-        public Task Register([FromBody] RegisterViewModel model)
-            => _userService.Register(model);
+        public async Task Register([FromBody] RegisterViewModel model)
+        {
+            await _userService.Register(model);
+            SetExpiresHeader();
+        }
+
         [HttpPost("login")]
-        public Task Login([FromBody] LoginViewModel model)
-            => _userService.Login(model);
+        public async Task Login([FromBody] LoginViewModel model)
+        {
+            await _userService.Login(model);
+            SetExpiresHeader();
+        }
+
         [HttpPost("logout")]
-        public Task Logout() => _userService.Logout();
+        public void Logout() => _userService.Logout();
+
+        private void SetExpiresHeader()
+        {
+            var date = DateTime.Now + TimeSpan.FromDays(1);
+            HttpContext.Response.Headers.Expires = date.ToString();
+        }
     }
 }

@@ -19,7 +19,11 @@ namespace ZDTickets.Storage.Identity
             var user = new User() { UserName = login };
             var result = await _userManager.CreateAsync(user, password);
             if (!result.Succeeded)
+            {
+                if (result.Errors.Any(e => e.Code == "InvalidUserName"))
+                    throw new ArgumentException("Имя пользователя может содержать только английские буквы или цифры");
                 throw new ArgumentException($"Пользователь {login} уже существует");
+            }
 
             await _signInManager.SignInAsync(user, false);
         }

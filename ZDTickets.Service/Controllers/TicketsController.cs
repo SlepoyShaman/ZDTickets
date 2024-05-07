@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ZDTickets.Logic.Models;
 using ZDTickets.Logic.Tickets;
 using ZDTickets.Logic.ViewModels;
@@ -7,7 +8,7 @@ namespace ZDTickets.Service.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class TicketsController : ControllerBase
     {
         private readonly ITicketService _tickets;
