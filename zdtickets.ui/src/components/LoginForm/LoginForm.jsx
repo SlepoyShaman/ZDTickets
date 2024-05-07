@@ -67,7 +67,7 @@ function LoginForm({ setUser, setMissingAccount }) {
         {formErrors.password && <span className="error-message">{formErrors.password}</span>}
 
         {error && <span className="error">{error}</span>}
-        <button type="submit" >Войти</button>
+        <button type="submit">Войти</button>
         <button onClick={setMissingAccount}>У меня нет аккаунта</button>
       </form>
     </>

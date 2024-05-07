@@ -45,10 +45,10 @@ export const MyTickets = () => {
       <ul className="tickets">
         {tickets.map(ticket => (
           <li className="ticket_info" key={ticket.ticketId}>
-            <div>Город отправления: {ticket.from}</div>
-            <div>Город прибытия: {ticket.to}</div>
-            <div>Номер места: {ticket.seatNumber}</div>
-            <div>Цена: {ticket.price}</div>
+            <div>Город отправления: <span>{ticket.from}</span></div>
+            <div>Город прибытия: <span>{ticket.to}</span></div>
+            <div>Номер места: <span>{ticket.seatNumber}</span></div>
+            <div>Цена: <span>{ticket.price} ₽</span></div>
             <button onClick={() => cancelBook(ticket.ticketId)}>Отменить бронь</button>
           </li>
         ))}

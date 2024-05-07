@@ -35,10 +35,10 @@ function Trains() {
       <ul className="trains">
         {trains.map(train => (
           <li className="trains_info" key={train.id}>
-            <div>Departure Time: {train.departureTime}</div>
-            <div>Arrival Time: {train.arrivalTime}</div>
-            <div>From: {train.from}</div>
-            <div>To: {train.to}</div>
+            <div>Время отправления: <span>{train.departureTime}</span></div>
+            <div>Время прибытия: <span>{train.arrivalTime}</span></div>
+            <div>Город отправления: <span>{train.from}</span></div>
+            <div>Город прибытия: <span>{train.to}</span></div>
             <TicketsList trainId={train.id} />
           </li>
         ))}
