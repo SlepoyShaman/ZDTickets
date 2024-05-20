@@ -33,7 +33,7 @@ function TrainsFilter({ trainsFilter, setFilter, onSubmit }) {
             <br />
             <label>Дата прибытия:</label>
             <input
-                type="text"
+                type="date"
                 name="departudeDate"
                 id="departudeDate"
                 value={trainsFilter.departudeDate}

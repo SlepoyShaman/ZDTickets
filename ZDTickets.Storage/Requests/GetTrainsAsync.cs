@@ -21,7 +21,10 @@ namespace ZDTickets.Storage.Requests
             if (_filter.ToCity is not null)
                 query = query.Where(t => EF.Functions.ILike(t.To, $"%{_filter.ToCity}%"));
             if (_filter.Date.HasValue)
-                query = query.Where(t => t.DepartureTime.Date == _filter.Date.Value.Date);
+            {
+                var utcDate = _filter.Date.Value.ToUniversalTime();
+                query = query.Where(t => t.DepartureTime.Date == utcDate.Date);
+            }
 
             var take = _filter.PageSize > 1 ? _filter.PageSize : 10;
             var number = _filter.PageNumber > 0 ? _filter.PageNumber : 1;
